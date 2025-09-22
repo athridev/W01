@@ -101,15 +101,20 @@ function typewriterEffect(element, text, speed = 50) {
 document.addEventListener('DOMContentLoaded', function() {
     // Create terminal cursor
     createTerminalCursor();
-    
-    // Typewriter effect for subtitle (delayed)
-    setTimeout(() => {
-        const subtitle = document.querySelector('.hero-subtitle');
-        if (subtitle) {
-            const originalText = subtitle.textContent;
+
+    // Prepare hero subtitle text so it doesn't flash before the typewriter starts
+    const subtitle = document.querySelector('.hero-subtitle');
+    if (subtitle) {
+        const originalText = subtitle.textContent.trim();
+        subtitle.setAttribute('data-original-text', originalText);
+        subtitle.setAttribute('aria-label', originalText);
+        subtitle.textContent = '';
+
+        // Typewriter effect for subtitle (delayed)
+        setTimeout(() => {
             typewriterEffect(subtitle, originalText, 30);
-        }
-    }, 2000);
+        }, 2000);
+    }
 });
 
 // Dynamic terminal lines
