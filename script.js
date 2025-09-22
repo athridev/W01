@@ -49,70 +49,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Terminal cursor effect for hero title
-function createTerminalCursor() {
-    const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) {
-        const originalText = heroTitle.innerHTML;
-        heroTitle.innerHTML = originalText + '<span class="terminal-cursor">|</span>';
-        
-        // Add CSS for cursor animation
-        const style = document.createElement('style');
-        style.textContent = `
-            .terminal-cursor {
-                animation: blink 1s infinite;
-                color: #00FFCC;
-            }
-            
-            @keyframes blink {
-                0%, 50% { opacity: 1; }
-                51%, 100% { opacity: 0; }
-            }
-        `;
-        document.head.appendChild(style);
-        
-        // Remove cursor after animation
-        setTimeout(() => {
-            const cursor = document.querySelector('.terminal-cursor');
-            if (cursor) {
-                cursor.remove();
-            }
-        }, 5000);
-    }
-}
-
 // Typewriter effect for hero subtitle
-function typewriterEffect(element, text, speed = 50) {
-    element.innerHTML = '';
+function typewriterEffect(element, text, speed = 50, onComplete) {
+    element.textContent = '';
     let i = 0;
-    
+
     function typeChar() {
         if (i < text.length) {
-            element.innerHTML += text.charAt(i);
+            element.textContent += text.charAt(i);
             i++;
             setTimeout(typeChar, speed);
+        } else if (typeof onComplete === 'function') {
+            onComplete();
         }
     }
-    
+
     typeChar();
 }
 
 // Initialize animations when page loads
 document.addEventListener('DOMContentLoaded', function() {
-    // Create terminal cursor
-    createTerminalCursor();
 
-    // Prepare hero subtitle text so it doesn't flash before the typewriter starts
-    const subtitle = document.querySelector('.hero-subtitle');
-    if (subtitle) {
-        const originalText = subtitle.textContent.trim();
-        subtitle.setAttribute('data-original-text', originalText);
-        subtitle.setAttribute('aria-label', originalText);
-        subtitle.textContent = '';
-
-        // Typewriter effect for subtitle (delayed)
-        setTimeout(() => {
-            typewriterEffect(subtitle, originalText, 30);
         }, 2000);
     }
 });
