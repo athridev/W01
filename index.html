@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Workforce01 connects underrepresented students and graduates with inclusive tech companies offering remote-first roles and mentorship." />
     <title>Workforce01 | Empowering Underrepresented Talent, Everywhere</title>
 
-       <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="apple-touch-icon" href="favicon.svg">
     <meta name="theme-color" content="#000000">
-    
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,167 +17,445 @@
     <noscript><style>.hero-subtitle-fallback { display: inline; }</style></noscript>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
     <!-- Terminal Animation Background -->
-    <div class="terminal-bg">
+    <div class="terminal-bg" aria-hidden="true">
         <div class="grid-lines"></div>
         <div class="flowing-lines"></div>
     </div>
 
     <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
+    <header class="header" data-header>
+        <div class="container header-container">
+            <a href="#hero" class="logo" aria-label="Workforce01 home">
                 <span class="logo-text">W01</span>
                 <span class="logo-subtext">Workforce01</span>
-            </div>
+            </a>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
+            <nav class="nav" id="primary-navigation" data-nav aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#how-it-works">How it works</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#journey">Journey</a></li>
+                    <li><a href="#success">Success</a></li>
+                    <li><a href="#hire">Hire Talent</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="https://whatsapp.com/channel/0029VaxRhlZ5kg74udCQQ62e" class="btn btn-primary nav-cta" target="_blank" rel="noopener noreferrer">Join the Network</a>
+            </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Empowering <span class="accent-text">Underrepresented</span><br>
-                    Talent, <span class="accent-text">Everywhere</span>
-                </h1>
-                <p class="hero-subtitle" data-typewriter-text="Breaking barriers in tech hiring">
-                    <span class="hero-subtitle-fallback">Breaking barriers in tech hiring</span>
-                </p>
-                <div class="hero-buttons">
-                    <a href="https://whatsapp.com/channel/0029VaxRhlZ5kg74udCQQ62e" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Join the Network</a>
-                    <a href="#about" class="btn btn-secondary">Learn More</a>
-                    <a href="#hire" class="btn btn-secondary">Hire Talent</a>
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content" data-animate>
+                    <p class="hero-eyebrow">Opportunity without borders</p>
+                    <h1 class="hero-title">
+                        Empowering <span class="accent-text">Underrepresented</span><br>
+                        Talent, <span class="accent-text">Everywhere</span>
+                    </h1>
+                    <p class="hero-subtitle" data-typewriter-text="Breaking barriers in tech hiring">
+                        <span class="hero-subtitle-fallback">Breaking barriers in tech hiring</span>
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://whatsapp.com/channel/0029VaxRhlZ5kg74udCQQ62e" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Join the Network</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                        <a href="#hire" class="btn btn-secondary">Hire Talent</a>
+                    </div>
+                    <ul class="hero-highlights" data-animate>
+                        <li>Remote-first opportunities in growth-stage startups and global tech leaders</li>
+                        <li>Mentorship, interview prep, and career coaching tailored to each candidate</li>
+                        <li>Trusted by inclusive companies that value diverse perspectives</li>
+                    </ul>
+                    <div class="trust-badges" data-animate>
+                        <span>Future of Work Alliance</span>
+                        <span>Africa Tech Bridge</span>
+                        <span>Global Remote Network</span>
+                    </div>
+                </div>
+                <div class="hero-showcase" data-animate>
+                    <div class="hero-card">
+                        <h2>Launch your global tech career</h2>
+                        <p>We guide underrepresented graduates from application to onboarding, unlocking world-class opportunities no matter where you live.</p>
+                        <dl class="hero-stats">
+                            <div class="stat">
+                                <dt>120+</dt>
+                                <dd>Remote placements made last year</dd>
+                            </div>
+                            <div class="stat">
+                                <dt>65%</dt>
+                                <dd>Average salary uplift for new hires</dd>
+                            </div>
+                            <div class="stat">
+                                <dt>35</dt>
+                                <dd>Countries represented in our talent community</dd>
+                            </div>
+                        </dl>
+                        <div class="hero-card-footer">
+                            <div>
+                                <span class="hero-card-label">For Candidates</span>
+                                <p>Build confidence with coaching, mentorship, and a supportive peer network.</p>
+                            </div>
+                            <div>
+                                <span class="hero-card-label">For Companies</span>
+                                <p>Hire ready-to-contribute engineers, analysts, and designers equipped for distributed teams.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="section-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M24 4L44 14V34L24 44L4 34V14L24 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                        <path d="M24 4V44" stroke="currentColor" stroke-width="2"/>
-                        <path d="M4 14L44 34" stroke="currentColor" stroke-width="2"/>
-                        <path d="M44 14L4 34" stroke="currentColor" stroke-width="2"/>
-                    </svg>
-                </div>
-                <h2 class="section-title">About W01</h2>
-                <p class="about-text">
-                    Workforce01 is a purpose-driven tech recruitment company dedicated to empowering underrepresented talent. We focus on helping students and fresh graduates from minority groups launch their careers by connecting them with remote job opportunities across the globe. At Workforce01, we believe that innovation thrives on diversity, and by bridging the gap between ambitious graduates and forward-thinking employers, we're shaping the next generation of global tech professionals.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="how-it-works" id="how-it-works">
-        <div class="container">
-            <h2 class="section-title">How It Works</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="20" cy="20" r="16" stroke="currentColor" stroke-width="2"/>
-                            <path d="M20 12V20L26 26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container about-container">
+                <div class="about-intro" data-animate>
+                    <div class="section-icon" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4L44 14V34L24 44L4 34V14L24 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M24 4V44" stroke="currentColor" stroke-width="2"/>
+                            <path d="M4 14L44 34" stroke="currentColor" stroke-width="2"/>
+                            <path d="M44 14L4 34" stroke="currentColor" stroke-width="2"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">Match with Remote Tech Roles</h3>
-                    <p class="feature-description">
-                        We match students & fresh graduates with remote tech roles worldwide, connecting you with opportunities that align with your skills and aspirations.
-                    </p>
+                    <h2 class="section-title">About W01</h2>
+                    <p class="about-text">Workforce01 is a purpose-driven tech recruitment company connecting underrepresented students and fresh graduates to remote-first roles across the globe. Diversity fuels innovation, and we exist to bridge the gap between ambitious graduates and forward-thinking employers ready to build inclusive teams.</p>
                 </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 4L36 12V28L20 36L4 28V12L20 4Z" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="20" cy="20" r="4" fill="currentColor"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Career Support & Mentorship</h3>
-                    <p class="feature-description">
-                        Get comprehensive career support, mentorship, and resources designed specifically for underrepresented talent in tech.
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="20" cy="20" r="16" stroke="currentColor" stroke-width="2"/>
-                            <path d="M8 20H32" stroke="currentColor" stroke-width="2"/>
-                            <path d="M20 8C24 12 24 28 20 32" stroke="currentColor" stroke-width="2"/>
-                            <path d="M20 8C16 12 16 28 20 32" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Diverse & Inclusive Teams</h3>
-                    <p class="feature-description">
-                        Partner with companies seeking to diversify and scale their global teams, creating truly inclusive work environments.
-                    </p>
+                <div class="about-highlights">
+                    <article class="about-card" data-animate>
+                        <h3>Mission</h3>
+                        <p>Champion equitable access to tech careers by removing systemic barriers and bias from the hiring journey.</p>
+                    </article>
+                    <article class="about-card" data-animate>
+                        <h3>Approach</h3>
+                        <p>We combine human-centred coaching, curated learning pathways, and employer partnerships to elevate overlooked talent.</p>
+                    </article>
+                    <article class="about-card" data-animate>
+                        <h3>Promise</h3>
+                        <p>Every candidate receives personalized guidance and every company gains a partner committed to long-term retention.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- For Companies Section -->
-    <section class="hire" id="hire">
-        <div class="container">
-            <div class="hire-content">
-                <h2 class="section-title">Partner with W01</h2>
-                <p class="hire-subtitle">
-                    Looking to diversify your team? Connect with exceptional underrepresented talent ready to make an impact.
-                </p>
-                <div class="hire-features">
-                    <div class="hire-feature">
-                        <h3>Pre-vetted Candidates</h3>
-                        <p>Access skilled graduates ready for remote work</p>
+        <!-- Impact Section -->
+        <section class="impact" id="impact">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <p class="section-eyebrow">Our Impact</p>
+                    <h2 class="section-title">Results that accelerate careers and teams</h2>
+                    <p class="section-subtitle">We measure success by sustainable outcomes for candidates and the companies who welcome them.</p>
+                </div>
+                <div class="impact-grid">
+                    <article class="impact-card" data-animate>
+                        <h3>92%</h3>
+                        <p>Offer-to-hire conversion rate thanks to rigorous screening and candidate enablement.</p>
+                    </article>
+                    <article class="impact-card" data-animate>
+                        <h3>4.8/5</h3>
+                        <p>Average employer satisfaction score for collaboration, speed, and quality of hire.</p>
+                    </article>
+                    <article class="impact-card" data-animate>
+                        <h3>30 days</h3>
+                        <p>Median time-to-hire for critical roles in engineering, data, and product.</p>
+                    </article>
+                    <article class="impact-card" data-animate>
+                        <h3>78%</h3>
+                        <p>Of placed talent come from communities historically excluded from tech.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <p class="section-eyebrow">How it works</p>
+                    <h2 class="section-title">Connecting ambition with opportunity</h2>
+                    <p class="section-subtitle">We support both sides of the hiring table with transparency and care at every step.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card" data-animate>
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="16" stroke="currentColor" stroke-width="2"/>
+                                <path d="M20 12V20L26 26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Match with Remote Tech Roles</h3>
+                        <p class="feature-description">We pair students and graduates with remote roles worldwide that align with strengths, interests, and growth goals.</p>
                     </div>
-                    <div class="hire-feature">
-                        <h3>Global Talent Pool</h3>
-                        <p>Hire from diverse backgrounds worldwide</p>
+                    <div class="feature-card" data-animate>
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 4L36 12V28L20 36L4 28V12L20 4Z" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Career Support &amp; Mentorship</h3>
+                        <p class="feature-description">Candidates access interview coaching, technical upskilling, and peer mentors who have navigated the same path.</p>
                     </div>
-                    <div class="hire-feature">
-                        <h3>Seamless Process</h3>
-                        <p>Streamlined hiring with dedicated support</p>
+                    <div class="feature-card" data-animate>
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="16" stroke="currentColor" stroke-width="2"/>
+                                <path d="M8 20H32" stroke="currentColor" stroke-width="2"/>
+                                <path d="M20 8C24 12 24 28 20 32" stroke="currentColor" stroke-width="2"/>
+                                <path d="M20 8C16 12 16 28 20 32" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Diverse &amp; Inclusive Teams</h3>
+                        <p class="feature-description">We partner with teams committed to representation, enabling inclusive onboarding and continuous belonging.</p>
                     </div>
                 </div>
-                <a href="mailto:adamj@workforce01.dev" class="btn btn-primary btn-large">Partner with Us</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Call to Action Section -->
-    <section class="cta" id="contact">
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">Start your journey with <span class="accent-text">W01</span> today.</h2>
-                <p class="cta-subtitle">Join our network of ambitious graduates and forward-thinking employers shaping the future of tech.</p>
-                <a href="https://whatsapp.com/channel/0029VaxRhlZ5kg74udCQQ62e" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">Join the Network</a>
+        <!-- Programs Section -->
+        <section class="programs" id="programs">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <p class="section-eyebrow">Tailored programs</p>
+                    <h2 class="section-title">Pathways designed for every stage of growth</h2>
+                    <p class="section-subtitle">From first internships to scaling international teams, our programs meet you where you are.</p>
+                </div>
+                <div class="programs-grid">
+                    <article class="program-card" data-animate>
+                        <h3>Launchpad Fellowship</h3>
+                        <p>12-week experience for final-year students with live projects, mentor-matching, and guaranteed interviews.</p>
+                        <ul>
+                            <li>Dedicated success coach</li>
+                            <li>Portfolio and resume labs</li>
+                            <li>Community-led accountability</li>
+                        </ul>
+                    </article>
+                    <article class="program-card" data-animate>
+                        <h3>Remote Ready Accelerator</h3>
+                        <p>For recent graduates transitioning into distributed teams with emphasis on communication, tooling, and delivery.</p>
+                        <ul>
+                            <li>Hands-on remote collaboration sprints</li>
+                            <li>Inclusive leadership workshops</li>
+                            <li>Access to alumni mentors across 20+ countries</li>
+                        </ul>
+                    </article>
+                    <article class="program-card" data-animate>
+                        <h3>Inclusive Hiring Partnerships</h3>
+                        <p>Custom pipelines for employers seeking consistent, diverse talent backed by data-driven performance insights.</p>
+                        <ul>
+                            <li>Role scoping and calibration</li>
+                            <li>Embedded talent partner support</li>
+                            <li>Onboarding and retention playbooks</li>
+                        </ul>
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Journey Section -->
+        <section class="journey" id="journey">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <p class="section-eyebrow">Candidate journey</p>
+                    <h2 class="section-title">A guided path from aspiration to impact</h2>
+                    <p class="section-subtitle">Every milestone is supported by specialists focused on your success.</p>
+                </div>
+                <ol class="journey-steps">
+                    <li class="journey-step" data-animate>
+                        <span class="journey-step-number">1</span>
+                        <div class="journey-step-content">
+                            <h3>Discover &amp; Assess</h3>
+                            <p>We evaluate strengths, ambitions, and skill gaps to craft an individualized roadmap.</p>
+                        </div>
+                    </li>
+                    <li class="journey-step" data-animate>
+                        <span class="journey-step-number">2</span>
+                        <div class="journey-step-content">
+                            <h3>Upskill &amp; Prepare</h3>
+                            <p>Participate in technical challenges, mock interviews, and soft-skill labs run by industry mentors.</p>
+                        </div>
+                    </li>
+                    <li class="journey-step" data-animate>
+                        <span class="journey-step-number">3</span>
+                        <div class="journey-step-content">
+                            <h3>Connect &amp; Interview</h3>
+                            <p>Meet vetted employers with inclusive hiring practices and transparent expectations.</p>
+                        </div>
+                    </li>
+                    <li class="journey-step" data-animate>
+                        <span class="journey-step-number">4</span>
+                        <div class="journey-step-content">
+                            <h3>Onboard &amp; Thrive</h3>
+                            <p>We stay connected post-hire with mentorship circles, leadership coaching, and retention support.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Success Stories Section -->
+        <section class="success" id="success">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <p class="section-eyebrow">Success stories</p>
+                    <h2 class="section-title">Real people, real progress</h2>
+                    <p class="section-subtitle">Hear from the graduates and hiring leaders who built brighter futures together.</p>
+                </div>
+                <div class="testimonial-grid">
+                    <article class="testimonial-card" data-animate>
+                        <p class="testimonial-quote">“Workforce01 helped me believe that a remote product role was possible. The coaching transformed how I show up in interviews.”</p>
+                        <p class="testimonial-name">Amina – Product Manager, Berlin</p>
+                    </article>
+                    <article class="testimonial-card" data-animate>
+                        <p class="testimonial-quote">“In just five weeks we hired two engineers who are now core to our platform team. The process was inclusive, data-backed, and efficient.”</p>
+                        <p class="testimonial-name">Diego – CTO, North America</p>
+                    </article>
+                    <article class="testimonial-card" data-animate>
+                        <p class="testimonial-quote">“The mentorship circle kept me accountable after relocating. I’m now leading a distributed analytics pod across three time zones.”</p>
+                        <p class="testimonial-name">Thandi – Data Lead, Cape Town</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners" id="partners">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <p class="section-eyebrow">Trusted by forward-thinking teams</p>
+                    <h2 class="section-title">Global companies building inclusive cultures</h2>
+                </div>
+                <ul class="partner-list">
+                    <li class="partner-logo" data-animate>Nova Labs</li>
+                    <li class="partner-logo" data-animate>Harbor Analytics</li>
+                    <li class="partner-logo" data-animate>Skyline Creative</li>
+                    <li class="partner-logo" data-animate>BrightPath Systems</li>
+                    <li class="partner-logo" data-animate>Latitude Ventures</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Hire Section -->
+        <section class="hire" id="hire">
+            <div class="container">
+                <div class="hire-content" data-animate>
+                    <div class="section-header">
+                        <p class="section-eyebrow">For companies</p>
+                        <h2 class="section-title">Partner with W01</h2>
+                        <p class="hire-subtitle">Looking to diversify your team? Connect with exceptional underrepresented talent ready to make an impact.</p>
+                    </div>
+                    <div class="hire-features">
+                        <div class="hire-feature" data-animate>
+                            <h3>Pre-vetted Candidates</h3>
+                            <p>Access skilled graduates ready for remote work.</p>
+                        </div>
+                        <div class="hire-feature" data-animate>
+                            <h3>Global Talent Pool</h3>
+                            <p>Hire from diverse backgrounds worldwide.</p>
+                        </div>
+                        <div class="hire-feature" data-animate>
+                            <h3>Seamless Process</h3>
+                            <p>Streamlined hiring with dedicated support.</p>
+                        </div>
+                    </div>
+                    <a href="mailto:adamj@workforce01.dev" class="btn btn-primary btn-large">Partner with Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <p class="section-eyebrow">FAQ</p>
+                    <h2 class="section-title">Answers to common questions</h2>
+                </div>
+                <div class="faq-items">
+                    <article class="faq-item" data-animate>
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            Who can join the Workforce01 talent network?
+                            <span class="faq-indicator" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-answer" hidden>
+                            <p>Students in their final year, recent graduates, and early-career professionals from underrepresented backgrounds who are passionate about technology are welcome. We review every application to ensure we can provide meaningful support.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item" data-animate>
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            Do companies need to be remote-first to partner with you?
+                            <span class="faq-indicator" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-answer" hidden>
+                            <p>We specialize in remote and hybrid roles, but we partner with organizations that offer flexible, inclusive environments and are committed to equitable hiring practices.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item" data-animate>
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            How do you ensure candidates are set up for long-term success?
+                            <span class="faq-indicator" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-answer" hidden>
+                            <p>Beyond placement, candidates receive onboarding guidance, mentorship, and access to ongoing leadership development so they can thrive in their new roles.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta" id="contact">
+            <div class="container">
+                <div class="cta-content" data-animate>
+                    <h2 class="cta-title">Start your journey with <span class="accent-text">W01</span> today.</h2>
+                    <p class="cta-subtitle">Join our network of ambitious graduates and forward-thinking employers shaping the future of tech.</p>
+                    <div class="cta-buttons">
+                        <a href="https://whatsapp.com/channel/0029VaxRhlZ5kg74udCQQ62e" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">Join the Network</a>
+                        <a href="mailto:hello@workforce01.dev" class="btn btn-secondary btn-large">Talk to our team</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
+                <div class="footer-brand">
                     <span class="logo-text">W01</span>
+                    <p>Empowering underrepresented talent, everywhere.</p>
                 </div>
-                <nav class="footer-nav">
+                <nav class="footer-nav" aria-label="Footer">
                     <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#impact">Impact</a>
+                    <a href="#programs">Programs</a>
                     <a href="https://www.linkedin.com/company/w01w01" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </nav>
+                <div class="footer-contact">
+                    <a href="mailto:adamj@workforce01.dev">adamj@workforce01.dev</a>
+                    <a href="https://whatsapp.com/channel/0029VaxRhlZ5kg74udCQQ62e" target="_blank" rel="noopener noreferrer">WhatsApp Channel</a>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Workforce01. Empowering underrepresented talent, everywhere.</p>
+                <p>&copy; 2024 Workforce01. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <button type="button" class="scroll-to-top" aria-label="Scroll to top">
+        <span aria-hidden="true">&#8593;</span>
+    </button>
 
     <script src="script.js"></script>
 </body>
