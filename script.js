@@ -69,37 +69,7 @@ function typewriterEffect(element, text, speed = 50, onComplete) {
 
 // Initialize animations when page loads
 document.addEventListener('DOMContentLoaded', function() {
-    // Prepare hero subtitle text so it doesn't flash before the typewriter starts
-    const subtitle = document.querySelector('.hero-subtitle');
-    if (subtitle) {
-        const originalText = subtitle.dataset.typewriterText?.trim() || subtitle.textContent.trim();
-        if (!originalText) {
-            return;
-        }
 
-        subtitle.setAttribute('aria-label', originalText);
-        subtitle.textContent = '';
-
-        const wrapper = document.createElement('span');
-        wrapper.className = 'typewriter-wrapper';
-
-        const textSpan = document.createElement('span');
-        textSpan.className = 'typewriter-text';
-
-        const cursorSpan = document.createElement('span');
-        cursorSpan.className = 'typewriter-cursor';
-        cursorSpan.setAttribute('aria-hidden', 'true');
-        cursorSpan.textContent = '|';
-
-        wrapper.appendChild(textSpan);
-        wrapper.appendChild(cursorSpan);
-        subtitle.appendChild(wrapper);
-
-        // Typewriter effect for subtitle (delayed)
-        setTimeout(() => {
-            typewriterEffect(textSpan, originalText, 30, () => {
-                subtitle.classList.add('typewriter-complete');
-            });
         }, 2000);
     }
 });
