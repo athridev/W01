@@ -194,6 +194,41 @@ body {
     margin-right: auto;
 }
 
+.hero-subtitle .typewriter-wrapper {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.15ch;
+}
+
+.hero-subtitle .typewriter-text {
+    display: inline;
+    white-space: pre;
+}
+
+.hero-subtitle .typewriter-cursor {
+    display: inline-block;
+    width: 0.6ch;
+    color: #00FFCC;
+    animation: typewriter-blink 1s steps(1, end) infinite;
+    line-height: 1;
+    font-size: 1em;
+}
+
+.hero-subtitle.typewriter-complete .typewriter-cursor {
+    animation: none;
+    opacity: 0;
+}
+
+@keyframes typewriter-blink {
+    0%, 50% {
+        opacity: 1;
+    }
+
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
 .hero-buttons {
     display: flex;
     gap: 1.5rem;
